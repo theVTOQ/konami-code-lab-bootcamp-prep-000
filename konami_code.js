@@ -21,7 +21,7 @@ function init() {
 
 function keydownHandler(e) {
   const key = e.key;
-  if(e === codes[index]){
+  if(key === codes[index]){
     index++;
     if(index === codes.length){
       alert('Hurray!');
