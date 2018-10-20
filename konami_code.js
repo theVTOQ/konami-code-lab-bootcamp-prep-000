@@ -18,8 +18,8 @@ function init() {
 
   body.addEventListener('keydown', function(e) {
     const key = e.key;
-    if(e == codes[index]){
-      if(index == codes.length - 1){
+    if(e === codes[index]){
+      if(index === codes.length){
         alert('Hurray!');
         index = 0;
       }else{
