@@ -16,18 +16,21 @@ function init() {
   const body = document.querySelector('body');
   let index = 0;
 
-  body.addEventListener('keydown', keydownHandler(event));
+  body.addEventListener('keydown', onKeyDownHandler(event));
 }
 
-function keydownHandler(e) {
+function onKeyDownHandler(e) {
   const key = e.key;
-  if(key === codes[index]){
+ 
+  if (key === alphabet[index]) {
     index++;
-    if(index === codes.length){
-      alert('Hurray!');
+ 
+    if (index === alphabet.length) {
+      alert("Hurray!");
+ 
       index = 0;
     }
-  }else{
+  } else {
     index = 0;
   }
 }
