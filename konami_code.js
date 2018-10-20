@@ -17,20 +17,20 @@ function init() {
   let index = 0;
 
   body.addEventListener('keydown', onKeyDownHandler(event));
-  function onKeyDownHandler(e) {
-    const key = e.key;
+}
 
-    if (key === alphabet[index]) {
-      index++;
+function onKeyDownHandler(e) {
+  const key = e.key;
 
-      if (index === alphabet.length) {
-        alert("Hurray!");
+  if (key === alphabet[index]) {
+    index++;
 
-        index = 0;
-      }
-    } else {
+    if (index === alphabet.length) {
+      alert("Hurray!");
+
       index = 0;
     }
+  } else {
+    index = 0;
   }
-
 }
