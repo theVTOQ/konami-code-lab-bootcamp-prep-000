@@ -12,12 +12,10 @@ const codes = [
 ];
 
 const body = document.querySelector('body');
+let index = 0;
 
 function init() {
   // your code here
-
-  let index = 0;
-
   body.addEventListener('keydown', onKeyDownHandler(e));
 }
 
