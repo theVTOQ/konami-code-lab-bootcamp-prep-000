@@ -21,6 +21,7 @@ function init() {
     if(e == codes[index]){
       if(index == codes.length - 1){
         alert('Hurray!');
+        index = 0;
       }else{
         index++;
       }
